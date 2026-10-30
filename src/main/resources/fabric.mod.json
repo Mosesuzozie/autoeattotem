@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "autoeattotem",
+  "version": "${version}",
+  "name": "AutoEat + AutoTotem",
+  "description": "AutoEat and AutoTotem driven by simulated client-side mouse and keyboard input.",
+  "authors": ["Kingmoses777"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.autoeattotem.AutoEatTotemMod"],
+    "modmenu": ["dev.autoeattotem.config.ModMenuIntegration"]
+  },
+  "mixins": ["autoeattotem.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
